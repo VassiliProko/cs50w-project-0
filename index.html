@@ -1,25 +1,3 @@
-{% extends "layout.html" %}
-
-{% block title %}Google Search{% endblock %}
-
-{% block content %}
-    <div class="search-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google Logo" class="google-logo">
-        
-        <form action="https://google.com/search">
-            <div class="input-wrapper">
-                <img src="search-icon.svg" alt="Search Icon" class="search-icon">
-                <input type="text" name="q" placeholder="Search Google or type a URL">
-            </div>
-            <input type="submit" value="Google Search" class="search-button">
-            </form>
-        </div>
-    </div>
-{% endblock %}
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,27 +5,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
-
-        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav>
-            <a href="index.html">Google Search</a>
+            <!-- <a href="index.html">Google Search</a> -->
             <a href="image-search.html">Image Search</a>
             <a href="advanced-search.html">Advanced Search</a>
         </nav>
         <main class="search-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google Logo" class="google-logo">
-        
+        <div class="google-logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google Logo" class="google-logo">
+        </div>
         <form action="https://google.com/search">
             <div class="input-wrapper">
                 <img src="search-icon.svg" alt="Search Icon" class="search-icon">
                 <input type="text" name="q" placeholder="Search Google or type a URL">
             </div>
-            <input type="submit" value="Google Search" class="search-button">
+            <span class="search-buttons">
+                <input type="submit" value="Google Search" class="search-button">
+                <input type="submit" name="btnI" value="I'm Feeling Lucky" class="search-button">
+            </span>
             </form>
         </div>
 

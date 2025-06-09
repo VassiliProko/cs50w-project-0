@@ -29,8 +29,24 @@ nav a {
 }
 
 .google-logo {
-    width: clamp(12rem, 25vw, 17rem);
+    /* width: clamp(12rem, 25vw, 17rem); */
+    width: 17rem;
     margin: 6rem 0 2rem;
+}
+
+.google-logo-container {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+#google-images {
+    color: #4285F4;
+    margin-left: 13rem;
+    transform: translateY(4.1rem);
+    position: absolute;
 }
 
 .input-wrapper {
@@ -64,9 +80,14 @@ form input {
     background-color: #ebebeb;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     font-weight: 500;
     color: #5f6368;
     cursor: pointer;
     width: fit-content;
+}
+
+.search-buttons {
+    gap: 1rem;
+    display: flex;
 }
