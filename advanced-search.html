@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google Logo" class="advanced-search-google-logo">
+            <a href="index.html">Google Search</a>
+            <a href="image-search.html">Image Search</a>
+            <!-- <a href="advanced-search.html">Advanced Search</a> -->
+        </nav>
+        <main class="advanced-search-container">
+            <h1>Advanced Search</h1>
+            <p class="advanced-search-description">
+                Find Pages with...
+            </p>
+        <form action="https://google.com/search" class="advanced-search-form">
+            <div class="row">
+                <div class="advanced-search-name">
+                    all these words:
+                </div>
+                <div class="advanced-search-input">
+                    <input type="text" name="as_q">
+                </div>
+            </div>
+            <div class="row">
+                <div class="advanced-search-name">
+                    this exact word or phrase:
+                </div>
+                <div class="advanced-search-input">
+                    <input type="text" name="as_epq">
+                </div>
+            </div>
+            <div class="row">
+                <div class="advanced-search-name">
+                    any of these words:
+                </div>
+                <div class="advanced-search-input">
+                    <input type="text" name="as_oq">
+                </div>
+            </div>
+            <div class="row">
+                <div class="advanced-search-name">
+                    none of these words:
+                </div>
+                <div class="advanced-search-input">
+                    <input type="text" name="as_eq">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Advanced Search" class="advanced-search-button">
+            </div>
+        </form>
+
+        </main>
+    </body>
+</html>
